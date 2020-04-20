@@ -75,3 +75,34 @@ body{
 .title.right {
     text-align: right;
 }
+.resume{
+    display: flex;
+    justify-content: space-between;
+}
+.resume img{
+    width: 48%;
+}
+.resume .container-texts{
+    width: 40%;
+}
+.p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.action{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+/*INFO*/
+.info{
+    background: #8E2DE2;
+    color: #fff;
+}
