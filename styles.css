@@ -3,11 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
+}
+.hero{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)), url("img/header.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)), url("img/header.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 650px;
+}
+.texts-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texts-hero h1{
+    font-size: 60px;
+}
+.texts-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.texts-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: #fff;
+}
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
