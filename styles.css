@@ -154,6 +154,7 @@ header nav{
 .info{
     background: #8E2DE2;
     color: #fff;
+    padding: 0 40px;
 }
 
 /*CARDS*/
@@ -331,5 +332,10 @@ input[type="submit"]:hover{
     }
     .form{
         padding: 0 20px;
+    }
+    .info{
+        background: #8E2DE2;
+        color: #fff;
+        padding: 0 5px;
     }
 }
