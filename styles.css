@@ -258,6 +258,9 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width:868px){
+    header nav{
+        z-index: 9999999;
+    }
     .resume{
         flex-direction: column-reverse;
         justify-content: center;
