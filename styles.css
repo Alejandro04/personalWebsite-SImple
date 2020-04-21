@@ -9,6 +9,39 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
 }
+header nav{
+    height: 70px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /*3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.icon{
+    display: none;
+}
+.links {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links a{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    padding: 4px 20px;
+    transition: 0.7s ease-out;
+    color: #fff;
+    text-decoration: none;
+}
+.links a:hover{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
 .hero{
     background: #8E2DE2;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)), url("img/header.jpg");  /* Chrome 10-25, Safari 5.1-6 */
@@ -54,11 +87,26 @@ body{
     left: 0;
     width: 100%;
 }
+.svgHeroInactive{
+    z-index: -1;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.skills{
+    background: #ddd;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
 
 /*GENERAL STYLES*/
 .container, .wave-container{
     width: 90%;
-    max-width: 1000px;
     overflow: hidden;
     margin: auto;
     padding: 0 0 80px 0;
@@ -88,10 +136,6 @@ body{
 .resume .container-texts{
     width: 40%;
 }
-.p{
-    text-align: justify;
-    margin-bottom: 20px;
-}
 .action{
     display: inline-block;
     text-decoration: none;
@@ -103,13 +147,11 @@ body{
     background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 /*INFO*/
 .info{
     background: #8E2DE2;
     color: #fff;
 }
-
 
 /*CARDS*/
 .content-cards{
@@ -188,6 +230,15 @@ input[type="submit"]:hover{
     background: #fff;
 }
 
+@media screen and (max-width: 1140px){
+    .resume img{
+        width: 30%;
+    }
+    .resume .container-texts{
+        width: 60%;
+    }
+}
+
 @media screen and (max-width:868px){
     .resume{
         flex-direction: column-reverse;
@@ -206,6 +257,42 @@ input[type="submit"]:hover{
     .card{
         width: 90%;
         margin-bottom: 20px;
+    }
+    .icon{
+        display: flex;
+        height: 70px;
+        color: #fff;
+        background: #8E2DE2;
+        align-items: center;
+        padding: 20px;
+        z-index: 1;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+    }
+     /*LLEVA EL MENU HORIZONTAL A VERTICAL PARA MOVIL*/
+     .links{
+        position: fixed;
+        height: 100vh;
+        flex-direction: column;
+        transition: all 1s ease;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 1), rgba(141, 45, 226, 1));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, rgba(75, 0, 224, 1), rgba(141, 45, 226, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 100%;
+        font-size: 2em;
+        justify-content: space-around;
+    }
+    .inactive{
+        -webkit-clip-path: circle(0 at 100% 0);
+        clip-path: circle(0 at 100% 0);
+    }
+    .active{
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+    .skills-container{
+        overflow-x: scroll;
     }
 }
 
