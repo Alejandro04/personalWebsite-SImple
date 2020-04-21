@@ -253,6 +253,7 @@ input[type="submit"]:hover{
     }
     .resume img{
         width: 60%;
+        margin-top: 20px;
     }
     .resume .container-texts{
         width: 80%;
