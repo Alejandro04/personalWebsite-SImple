@@ -184,8 +184,10 @@ header nav{
 }
 .card p{
     font-weight: 300;
-    font-size: 25px;
-    margin-bottom: 10px;
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+    margin: 20px 0;
 }
 
 /*FOOTER*/
@@ -197,6 +199,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 80px;
 }
 .input{
     background: transparent;
@@ -214,7 +217,7 @@ footer{
 input[type="text"], 
 input[type="email"]{
     display: inline-block;
-    width: 49%;
+    width: 30%;
     margin-bottom: 30px;
 }
 .form textarea{
@@ -226,6 +229,7 @@ input[type="submit"]{
     text-align: center;
     padding: 14px 0;
     border-radius: 8px;
+    margin-top: 10px;
 }
 input[type="submit"]:hover{
     cursor: pointer;
@@ -307,21 +311,15 @@ input[type="submit"]:hover{
     .skills-container{
         margin-bottom: 0;
     }
-}
-
-@media screen and (max-width:400px){
     input[type="text"], 
     input[type="email"]{
         display: inline-block;
         width: 100%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .form textarea{
-        width: 100%;
-        margin-bottom: 15px;
     }
     input[type="submit"]{
         width: 100%;
+    }
+    .form{
+        padding: 0 20px;
     }
 }
