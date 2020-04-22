@@ -273,6 +273,32 @@ input[type="submit"]:hover{
     padding: 10px;
 }
 
+.btnPay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #8E2DE2;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 60px;
+    width: 200px;
+    margin: auto;
+}
+.btnPay:hover{
+    color: #fff;
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.work_p{
+    line-height:1.5; 
+    font-size: 1.5em; 
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1140px){
     .resume img{
         width: 30%;
