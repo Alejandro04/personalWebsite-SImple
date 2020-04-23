@@ -309,6 +309,93 @@ input[type="submit"]:hover{
     margin-bottom: 30px;
 }
 
+/* BLOG */
+
+.items-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+}
+.card-blog{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+    border-radius: 10px;
+    margin-top: 28px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-width: 280px;
+}
+.card-blog:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card-blog img{
+    width: 100%;
+    margin: auto;
+}
+.labels-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.labelPosts{
+    font-size: 1.2em;
+}
+.labelPostsResume{
+    font-size: 1em;
+    color: #8E2DE2;
+    margin-top: 5px;
+}
+.title-blog{
+    margin-top: 60px;
+}
+.items-detail-container article{
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: 300;
+}
+.hashtags-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.hashtag{
+    padding: 10px;
+    background: #8E2DE2;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+}
+.comments-container{
+    text-align: center;
+    margin: 50px 0;
+    color: #a18cd1;
+}
+.post-subtitle{
+    font-weight: bold;
+}
+.post-subtitle-subtitle{
+    color: #8E2DE2;
+    font-weight: bold;
+}
+.items-detail-container{
+    padding: 40px 100px;
+}
+/* END BLOG */
+
 @media screen and (max-width: 1140px){
     .resume img{
         width: 30%;
@@ -317,7 +404,6 @@ input[type="submit"]:hover{
         width: 60%;
     }
 }
-
 @media screen and (max-width:868px){
     header nav{
         z-index: 9999999;
@@ -406,8 +492,10 @@ input[type="submit"]:hover{
     .card-blog{
         width: 40%;
     }
+    .items-detail-container{
+        padding: 40px 60px;
+    }
 }
-
  /*BLOG*/
 @media screen and (max-width: 652px){
     .card-blog{
@@ -418,7 +506,6 @@ input[type="submit"]:hover{
     }
 }
  /*END BLOG*/
-
 @media screen and (max-width: 580px){
     .text-contact{
         flex-direction: column-reverse;
@@ -428,8 +515,10 @@ input[type="submit"]:hover{
         flex-direction: column;
         margin-bottom: 30px;
     }
+    .items-detail-container{
+        padding: 40px 20px;
+    }
 }
-
 @keyframes moveUp {
     0%{
         opacity: 0;
@@ -441,89 +530,3 @@ input[type="submit"]:hover{
         transform: translateX(0);
     }
 }
-
-
-/* BLOG */
-
-.items-container{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 50px 50px;
-}
-.card-blog{
-    width: 30%;
-    text-align: center;
-    height: auto;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
-    transform: scale(1);
-    transition: transform 0.6s;
-    border-radius: 10px;
-    margin-top: 28px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    min-width: 280px;
-}
-.card-blog:hover{
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    transform: scale(1.03);
-    cursor: pointer;
-}
-.card-blog img{
-    width: 100%;
-    margin: auto;
-}
-.labels-container{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.labelPosts{
-    font-size: 1.2em;
-}
-.labelPostsResume{
-    font-size: 1em;
-    color: #8E2DE2;
-    margin-top: 5px;
-}
-.title-blog{
-    margin-top: 60px;
-}
-.items-detail-container{
-    padding: 100px;
-}
-.items-detail-container article{
-    padding: 20px;
-    font-size: 1.2em;
-    line-height: 2;
-    font-weight: 300;
-}
-.hashtags-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.hashtag{
-    padding: 10px;
-    background: #8E2DE2;
-    color: #fff;
-    border-radius: 8px;
-    margin: 10px;
-}
-.comments-container{
-    text-align: center;
-    margin: 50px 0;
-    color: #a18cd1;
-}
-.post-subtitle{
-    font-weight: bold;
-}
-.post-subtitle-subtitle{
-    color: #8E2DE2;
-    font-weight: bold;
-}
-/* END BLOG */
