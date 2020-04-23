@@ -356,8 +356,8 @@ input[type="submit"]:hover{
 }
 .labelPostsResume{
     font-size: 1em;
-    color: #8E2DE2;
     margin-top: 5px;
+    color: #777;
 }
 .title-blog{
     margin-top: 60px;
