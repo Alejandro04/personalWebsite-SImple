@@ -505,4 +505,9 @@ input[type="submit"]:hover{
     border-radius: 8px;
     margin: 10px;
 }
+.comments-container{
+    text-align: center;
+    margin: 50px 0;
+    color: #a18cd1;
+}
 /* END BLOG */
