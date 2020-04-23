@@ -73,6 +73,7 @@ header nav{
     justify-content: center;
     align-items: center;
     animation: moveUp 1s ease-in;
+    margin-top: 40px;
 }
 .texts-hero h1{
     font-size: 3.5em;
@@ -341,6 +342,9 @@ input[type="submit"]:hover{
 .card-blog a{
     text-decoration: none;
 }
+.card-blog a:active{
+    color: #8E2DE2;
+}
 .card-blog img{
     width: 100%;
     margin: auto;
@@ -358,9 +362,6 @@ input[type="submit"]:hover{
     font-size: 1em;
     margin-top: 5px;
     color: #777;
-}
-.title-blog{
-    margin-top: 60px;
 }
 .items-detail-container article{
     padding: 20px;
