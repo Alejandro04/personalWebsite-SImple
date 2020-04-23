@@ -25,13 +25,16 @@ header nav{
     display: none;
 }
 .logo{
-    color: #fff;
     font-size: 1.5em;
     display: flex;
     align-items: center;
     width: 100%;
     margin-left: 20px;
     font-weight: 300;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
 }
 .links {
     display: flex;
@@ -73,7 +76,7 @@ header nav{
     justify-content: center;
     align-items: center;
     animation: moveUp 1s ease-in;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .texts-hero h1{
     font-size: 3.5em;
@@ -416,6 +419,9 @@ input[type="submit"]:hover{
 @media screen and (max-width:868px){
     header nav{
         z-index: 9999999;
+    }
+    .texts-hero{
+        margin-top: 40px;
     }
     .resume{
         flex-direction: column-reverse;
