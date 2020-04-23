@@ -338,6 +338,9 @@ input[type="submit"]:hover{
     transform: scale(1.03);
     cursor: pointer;
 }
+.card-blog a{
+    text-decoration: none;
+}
 .card-blog img{
     width: 100%;
     margin: auto;
@@ -387,13 +390,14 @@ input[type="submit"]:hover{
 .post-subtitle{
     font-weight: bold;
 }
+.post-subtitle-subtitle{
+    color: #551A8B;
+}
 .post-subtitle-subtitle a{
     text-decoration: none;
-    color: #8E2DE2;
-    font-weight: bold;
 }
 .post-subtitle-subtitle a:hover{
-    color: #a18cd1;
+    color: #8E2DE2;
 }
 .items-detail-container{
     padding: 40px 100px;
