@@ -81,6 +81,10 @@ header nav{
 .texts-hero h2{
     font-size: 1.5em;
     margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    width: 70%;
+    margin-top: 10px;
 }
 .texts-hero p{
     font-size: 1.5em;
@@ -409,6 +413,9 @@ input[type="submit"]:hover{
     .card-blog{
         width: 100%;
     }
+    .texts-hero h2{
+        width: 90%;
+    }
 }
  /*END BLOG*/
 
@@ -492,6 +499,8 @@ input[type="submit"]:hover{
 .items-detail-container article{
     padding: 20px;
     font-size: 1.2em;
+    line-height: 2;
+    font-weight: 300;
 }
 .hashtags-container{
     display: flex;
@@ -509,5 +518,12 @@ input[type="submit"]:hover{
     text-align: center;
     margin: 50px 0;
     color: #a18cd1;
+}
+.post-subtitle{
+    font-weight: bold;
+}
+.post-subtitle-subtitle{
+    color: #8E2DE2;
+    font-weight: bold;
 }
 /* END BLOG */
