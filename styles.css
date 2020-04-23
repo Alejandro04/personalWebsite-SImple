@@ -472,21 +472,37 @@ input[type="submit"]:hover{
 .labels-container{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
 }
 .labelPosts{
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+.labelPostsResume{
+    font-size: 1em;
+    color: #8E2DE2;
+    margin-top: 5px;
 }
 .title-blog{
     margin-top: 60px;
 }
 .items-detail-container{
-    font-size: 1.5em;
     padding: 100px;
 }
-
-.items-detail-container p{
+.items-detail-container article{
     padding: 20px;
+    font-size: 1.2em;
 }
-
+.hashtags-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.hashtag{
+    padding: 10px;
+    background: #8E2DE2;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+}
 /* END BLOG */
