@@ -308,17 +308,42 @@ input[type="submit"]:hover{
     color: #fff;
     background: #a18cd1;
 }
+.btnDonate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #a18cd1;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 10px;
+    width: 20%;
+    min-width: 250px;
+    text-align: center;
+    margin: auto;
+}
+.btnDonate:hover{
+    color: #fff;
+    background: #8E2DE2;
+}
 .btnPay-container{
     margin-top: 60px;
+}
+.btnDonate-container{
+    margin-top: 30px;
 }
 .work_p{
     line-height:1.5; 
     font-size: 1.5em; 
     margin-bottom: 30px;
 }
+.donate-text{
+    color: #777;
+}
 
 /* BLOG */
-
 .items-container{
     display: flex;
     width: 100%;
