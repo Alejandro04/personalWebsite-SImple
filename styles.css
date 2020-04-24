@@ -35,6 +35,7 @@ header nav{
 .logo a{
     text-decoration: none;
     color: #fff;
+    text-align: center;
 }
 .links {
     display: flex;
