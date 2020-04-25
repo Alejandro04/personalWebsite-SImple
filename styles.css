@@ -25,13 +25,17 @@ header nav{
     display: none;
 }
 .logo{
-    color: #fff;
     font-size: 1.5em;
     display: flex;
     align-items: center;
     width: 100%;
     margin-left: 20px;
     font-weight: 300;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
 }
 .links {
     display: flex;
@@ -73,10 +77,19 @@ header nav{
     justify-content: center;
     align-items: center;
     animation: moveUp 1s ease-in;
+    margin-top: 60px;
 }
 .texts-hero h1{
-    font-size: 60px;
+    font-size: 3.5em;
     text-align: center;
+}
+.texts-hero h2{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+    width: 70%;
+    margin-top: 10px;
 }
 .texts-hero p{
     font-size: 1.5em;
@@ -285,21 +298,144 @@ input[type="submit"]:hover{
     border-radius: 8px;
     text-decoration: none;
     font-size: 1.5em;
-    height: 60px;
-    width: 200px;
+    padding: 20px 20px;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
     margin: auto;
 }
 .btnPay:hover{
     color: #fff;
-    background: #8E2DE2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(75, 0, 224, 0.658), rgba(141, 45, 226,0.658)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #a18cd1;
+}
+.btnDonate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #a18cd1;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 8px 10px;
+    width: 20%;
+    min-width: 250px;
+    text-align: center;
+    margin: auto;
+}
+.btnDonate:hover{
+    color: #fff;
+    background: #8E2DE2;
+}
+.btnPay-container{
+    margin-top: 60px;
+}
+.btnDonate-container{
+    margin-top: 30px;
 }
 .work_p{
     line-height:1.5; 
     font-size: 1.5em; 
     margin-bottom: 30px;
 }
+.donate-text{
+    color: #777;
+}
+
+/* BLOG */
+.items-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 50px;
+}
+.card-blog{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+    border-radius: 10px;
+    margin-top: 28px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-width: 280px;
+}
+.card-blog:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card-blog a{
+    text-decoration: none;
+}
+.card-blog a:active{
+    color: #8E2DE2;
+}
+.card-blog img{
+    width: 100%;
+    margin: auto;
+}
+.labels-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.labelPosts{
+    font-size: 1.2em;
+}
+.labelPostsResume{
+    font-size: 1em;
+    margin-top: 5px;
+    color: #777;
+}
+.items-detail-container article{
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 2;
+    font-weight: 300;
+}
+.hashtags-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+.hashtag{
+    padding: 10px;
+    background: #8E2DE2;
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+}
+.comments-container{
+    text-align: center;
+    margin: 50px 0;
+    color: #a18cd1;
+}
+.post-subtitle{
+    font-weight: bold;
+}
+.post-subtitle-subtitle{
+    color: #551A8B;
+}
+.post-subtitle-subtitle a{
+    text-decoration: none;
+}
+.post-subtitle-subtitle a:hover{
+    color: #8E2DE2;
+}
+.items-detail-container{
+    padding: 40px 100px;
+}
+/* END BLOG */
 
 @media screen and (max-width: 1140px){
     .resume img{
@@ -309,10 +445,12 @@ input[type="submit"]:hover{
         width: 60%;
     }
 }
-
 @media screen and (max-width:868px){
     header nav{
         z-index: 9999999;
+    }
+    .texts-hero{
+        margin-top: 40px;
     }
     .resume{
         flex-direction: column-reverse;
@@ -394,7 +532,24 @@ input[type="submit"]:hover{
         color: #fff;
         padding: 0 5px;
     }
+    /*BLOG*/
+    .card-blog{
+        width: 40%;
+    }
+    .items-detail-container{
+        padding: 40px 60px;
+    }
 }
+ /*BLOG*/
+@media screen and (max-width: 652px){
+    .card-blog{
+        width: 100%;
+    }
+    .texts-hero h2{
+        width: 90%;
+    }
+}
+ /*END BLOG*/
 @media screen and (max-width: 580px){
     .text-contact{
         flex-direction: column-reverse;
@@ -404,8 +559,10 @@ input[type="submit"]:hover{
         flex-direction: column;
         margin-bottom: 30px;
     }
+    .items-detail-container{
+        padding: 40px 20px;
+    }
 }
-
 @keyframes moveUp {
     0%{
         opacity: 0;
