@@ -435,6 +435,12 @@ input[type="submit"]:hover{
 .items-detail-container{
     padding: 40px 100px;
 }
+.img-post-container{
+    margin: 10px 0;
+}
+.img-post-container img{
+    width: 100%;
+}
 /* END BLOG */
 
 @media screen and (max-width: 1140px){
